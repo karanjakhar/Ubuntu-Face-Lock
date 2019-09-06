@@ -21,9 +21,7 @@ def real_encoding():
 
 
 def recognise_face(test_encoding):
-    #print(np.array(real_encode).shape,np.array(test_encoding).shape)
     distance = fr.face_distance([real_encode[0]],test_encoding)
-    #print(distance)
     if distance < 0.5:
         return True
     else:
